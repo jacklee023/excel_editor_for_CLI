@@ -89,22 +89,38 @@ h   #左移1格
 将当前单元格重写为“$string"，如需填写为空，则填写为`e None`
 
 6.移动Sheet[ops]
-使用`p` | ‘n‘ 来切换上一个、下一个sheet
+
+使用`p` | `n` 来切换上一个、下一个sheet
 
 7.创建/删除Sheet[ops arg]
+
 使用`c $sheetname`来创建名为$sheetname的新sheet
+
 使用`r $sheetname`来删除名为$sheetname
 
-8.设置列宽[ops arg][ops]
-使用`w $width`来统一设置所有列宽
-使用`w $col $width`来设置指定列列宽
+8.设置显示范围[ops obj arg]
 
-9.清空当前行/列[ops arg]
-使用`f r`来清空当前行
-使用`f c`来清空当前列
+使用`num c $col_num`设置显示列数 
 
-10.保存当前文件[ops]
+使用`num r $row_num`设置显示行数  
+
+9.设置列宽[ops arg][ops]
+
+使用`w $width`来统一设置所有列宽   
+
+使用`w $col $width`来设置指定列列宽    
+
+
+10.清空当前行/列[ops arg]
+
+使用`f r`来清空当前行    
+
+使用`f c`来清空当前列       
+
+
+11.保存当前文件[ops]
+
 如修改过文件，需要使用`:w`或`save`来保存文件并退出
 
-11.退出
+12.退出
 使用`q`, `quit`退出
